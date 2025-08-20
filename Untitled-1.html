@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COURIER-RX – PrimeRX Next-Day Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+      --brand:#03fc7f;
+      --dark:#111;
+      --light:#fff;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+    body{background:var(--light);color:var(--dark);line-height:1.6;}
+    .btn{display:inline-block;background:var(--brand);color:var(--dark);padding:14px 32px;border-radius:30px;font-weight:bold;font-size:16px;text-decoration:none;transition:.25s;}
+    .btn:hover{background:var(--dark);color:var(--brand);}
+    .btn-outline{background:transparent;border:2px solid var(--brand);color:var(--brand);}
+    .btn-outline:hover{background:var(--brand);color:var(--dark);}
+    header{background:var(--brand);color:var(--dark);padding:24px 8%;}
+    nav{display:flex;align-items:center;justify-content:space-between;}
+    .logo{font-weight:900;font-size:24px;}
+    .hero{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:80px 8%;}
+    .hero h1{font-size:48px;font-weight:900;margin-bottom:16px;}
+    .hero p{font-size:20px;margin-bottom:32px;}
+    .hero img{max-width:100%;width:480px;border-radius:12px;}
+    .steps{background:var(--dark);color:var(--light);padding:80px 8%;}
+    .steps h2{text-align:center;margin-bottom:40px;font-size:32px;}
+    .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+    .card{background:#1a1a1a;padding:32px;border-radius:12px;}
+    .card h3{color:var(--brand);margin-bottom:12px;}
+    .mockup{background:#f5f5f5;padding:80px 8%;text-align:center;}
+    .mockup img{max-width:100%;border:1px solid #ddd;border-radius:12px;}
+    .pricing{background:var(--brand);color:var(--dark);padding:60px 8%;text-align:center;}
+    .pricing h2{margin-bottom:16px;}
+    .compliance{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;padding:40px 8%;}
+    .compliance img{height:48px;}
+    footer{background:var(--dark);color:var(--light);padding:40px 8%;}
+    footer a{color:var(--brand);text-decoration:none;margin-right:16px;}
+    @media(max-width:768px){
+      .hero{flex-direction:column;text-align:center;}
+      .hero h1{font-size:36px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">COURIER-RX</div>
+    <a href="#demo" class="btn">Book Demo</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Send Today.<br>Deliver Tomorrow.</h1>
+    <p>One-click overnight delivery for every PrimeRX pharmacy. Zero setup, zero hassle.</p>
+    <a href="#demo" class="btn">Connect to PrimeRX</a>
+  </div>
+  <img src="https://via.placeholder.com/480x300/03fc7f/111?text=PrimeRX+Integration" alt="PrimeRX Dashboard">
+</section>
+
+<section class="steps">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. No New Software</h3>
+      <p>PrimeRX already lists “COURTER-RX” as a courier option. Your staff uses the same screen they know.</p>
+    </div>
+    <div class="card">
+      <h3>2. One Click</h3>
+      <p>Select the patient, choose “COURTER-RX Next-Day,” hit “Send.” That’s it.</p>
+    </div>
+    <div class="card">
+      <h3>3. We Handle the Rest</h3>
+      <p>Evening pickup, tamper-evident totes, real-time SMS tracking, and photo proof of delivery by 11 a.m.</p>
+    </div>
+  </div>
+</section>
+
+<section class="mockup">
+  <h2>Built Inside PrimeRX</h2>
+  <img src="https://via.placeholder.com/800x450/ffffff/111?text=PrimeRX+Dashboard+Screenshot" alt="PrimeRX Courier Dropdown">
+</section>
+
+<section class="pricing">
+  <h2>Simple, Transparent Pricing</h2>
+  <p style="font-size:24px;font-weight:bold;">$7.99 per delivery</p>
+  <p>Metro-wide • No contracts • $2.00 surcharge for cold-chain (waived first 3 months)</p>
+</section>
+
+<section class="compliance">
+  <img src="https://via.placeholder.com/120x60/ffffff/111?text=HIPAA" alt="HIPAA">
+  <img src="https://via.placeholder.com/120x60/ffffff/111?text=PCI-DSS" alt="PCI-DSS">
+  <img src="https://via.placeholder.com/120x60/ffffff/111?text=PrimeRX+Partner" alt="PrimeRX Certified">
+</section>
+
+<footer>
+  <div style="margin-bottom:16px;">
+    <a href="#">API Docs</a>
+    <a href="#">Support Chat</a>
+    <a href="tel:1-800-COURTER">1-800-COURTER</a>
+  </div>
+  <p>&copy; 2025 COURTER-RX. All rights reserved.</p>
+</footer>
+
+<!-- Calendly inline embed -->
+<div id="demo" style="padding:80px 8%;text-align:center;">
+  <h2>See It Live in 10 Minutes</h2>
+  <p>Pick a slot, share your PrimeRX credentials, and watch the integration work in real time.</p>
+  <!-- Calendly inline widget -->
+  <div class="calendly-inline-widget" data-url="https://calendly.com/courter-rx/demo" style="min-width:320px;height:700px;"></div>
+</div>
+
+<!-- Calendly script -->
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
